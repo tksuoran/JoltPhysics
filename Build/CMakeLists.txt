@@ -100,6 +100,13 @@ option(ENABLE_OBJECT_STREAM "Compile the ObjectStream class and RTTI attribute i
 # Enable installation
 option(ENABLE_INSTALL "Generate installation target"  ON)
 
+message(STATUS "PROJECT_IS_TOP_LEVEL            = ${PROJECT_IS_TOP_LEVEL}")
+message(STATUS "OVERRIDE_CXX_FLAGS              = ${OVERRIDE_CXX_FLAGS}")
+message(STATUS "INTERPROCEDURAL_OPTIMIZATION    = ${INTERPROCEDURAL_OPTIMIZATION}")
+message(STATUS "CPP_RTTI_ENABLED                = ${CPP_RTTI_ENABLED}")
+message(STATUS "ENABLE_INSTALL                  = ${ENABLE_INSTALL}")
+message(STATUS "USE_STATIC_MSVC_RUNTIME_LIBRARY = ${USE_STATIC_MSVC_RUNTIME_LIBRARY}")
+
 include(CMakeDependentOption)
 
 # Ability to toggle between the static and DLL versions of the MSVC runtime library
